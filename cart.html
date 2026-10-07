@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик</title>
+    <link rel="stylesheet" href="CSS/health-food.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="search">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder=""
+                autocomplete="off">
+
+            <div
+                class="search-results"
+                id="searchResults">
+            </div>
+        </div>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Health Food">
+            </a>
+        </div>
+
+        <div class="phones">
+            <a href="tel:+380950295297">
+                <span class="phone-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.8-.4 1.2-.2.9.3 1.8.5 2.7.5.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.4 21 3 12.6 3 2.8c0-.6.4-1 1-1h3.6c.6 0 1 .4 1 1 0 .9.2 1.8.5 2.7.1.4 0 .9-.2 1.2l-2.3 2.1z"/>
+                    </svg>
+                </span>
+                +38 095 0 295 297
+            </a>
+        </div>
+
+        <div class="basket">
+            <a href="cart.html">
+                <span class="cart-icon">
+                    🛒
+                    <span id="cartCount">0</span>
+                </span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="cart-title">
+        <svg class="cart-title-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 8H6"/>
+            <circle cx="10" cy="20" r="1.2"/>
+            <circle cx="18" cy="20" r="1.2"/>
+        </svg>
+    </div>
+
+    <main class="cart-page">
+
+        <div id="cart-items"></div>
+
+    </main>
+
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+
+</body>
+
+</html>

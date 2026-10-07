@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Адмін-панель</title>
+
+    <link rel="stylesheet" href="CSS/health-food.css">
+</head>
+
+<body>
+
+    <main class="admin-page">
+
+        <div class="admin-header">
+
+            <h1>Адмін-панель</h1>
+
+            <button
+                type="button"
+                id="logout-button"
+                style="display: none;"
+            >
+                Вийти
+            </button>
+
+        </div>
+
+        <p id="admin-message"></p>
+
+        <section class="admin-login">
+
+            <h2>Вхід</h2>
+
+            <input
+                type="password"
+                id="admin-secret"
+                placeholder="Пароль адміністратора"
+            >
+
+            <button
+                type="button"
+                id="login-button"
+            >
+                Увійти
+            </button>
+
+        </section>
+
+        <section
+            class="admin-products"
+            id="admin-products"
+            style="display: none;"
+        >
+
+            <section class="admin-orders-list">
+
+                <h2 id="orders-toggle">
+                    Замовлення
+                </h2>
+
+                <div id="admin-orders-list"></div>
+
+            </section>
+
+            <div class="admin-add-product">
+
+                <h2 id="product-form-title">
+                    Додати товар
+                </h2>
+
+                <label for="product-name">
+                    Назва товару
+                </label>
+
+                <input
+                    type="text"
+                    id="product-name"
+                >
+
+                <label for="product-description">
+                    Опис
+                </label>
+
+                <textarea
+                    id="product-description"
+                ></textarea>
+
+                <label for="product-price">
+                    Ціна
+                </label>
+
+                <input
+                    type="number"
+                    id="product-price"
+                >
+
+                <label for="product-image">
+                    Фото
+                </label>
+
+                <input
+                    type="file"
+                    id="product-image"
+                    accept="image/*"
+                >
+
+                <label for="product-category">
+                    Категорія
+                </label>
+
+                <select id="product-category">
+
+                    <option
+                        value=""
+                        disabled
+                        selected
+                    >
+                        Оберіть категорію
+                    </option>
+
+                </select>
+
+                <h3>Фасовки</h3>
+
+                <div id="packagings"></div>
+
+                <button
+                    type="button"
+                    id="add-packaging-button"
+                >
+                    + Додати фасовку
+                </button>
+
+                <button
+                    type="button"
+                    id="create-product-button"
+                >
+                    Створити товар
+                </button>
+
+                <button
+                    type="button"
+                    id="cancel-edit-button"
+                    style="display: none;"
+                >
+                    Скасувати
+                </button>
+
+            </div>
+
+            <section class="admin-products-list">
+
+                <h2 id="products-toggle">
+                    Редагування товарів
+                </h2>
+
+                <div id="admin-products-list"></div>
+
+            </section>
+
+            <div class="admin-categories">
+
+                <h2 id="categories-toggle">
+                    Управління категоріями
+                </h2>
+
+                <input
+                    type="text"
+                    id="new-category-name"
+                    placeholder="Назва категорії"
+                >
+
+                <input
+                    type="file"
+                    id="new-category-image"
+                    accept=".jpg,.jpeg,.png,.webp"
+                >
+
+                <button
+                    type="button"
+                    id="add-category-button"
+                >
+                    Додати категорію
+                </button>
+
+                <div id="admin-categories-list"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

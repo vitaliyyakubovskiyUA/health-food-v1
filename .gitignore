@@ -1,0 +1,9 @@
+server/.env
+
+.DS_Store
+
+server/cloudflared
+server/cloudflared.tgz
+server/ngrok
+server/ngrok.zip
+server/node_modules/
